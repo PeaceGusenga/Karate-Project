@@ -1,0 +1,45 @@
+12:19:26.004 [main]  INFO  com.intuit.karate - Karate version: 1.4.0-SNAPSHOT
+12:19:42.134 [main]  DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/posts
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 61
+1 > Host: jsonplaceholder.typicode.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+1 > Accept-Encoding: gzip,deflate
+{"title":"Test Post","body":"This is a test post","userId":1}
+
+12:19:44.260 [main]  DEBUG com.intuit.karate - response time in milliseconds: 2103
+1 < 201
+1 < Date: Thu, 11 May 2023 10:19:43 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 87
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 999
+1 < X-Ratelimit-Reset: 1683800406
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Access-Control-Allow-Credentials: true
+1 < Cache-Control: no-cache
+1 < Pragma: no-cache
+1 < Expires: -1
+1 < Access-Control-Expose-Headers: Location
+1 < Location: http://jsonplaceholder.typicode.com/posts/101
+1 < X-Content-Type-Options: nosniff
+1 < Etag: W/"57-tb2JEXLtqvlYgkxd1vS0t5try68"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pnCaJti4KKf0EXcLhDeyVHtTIe%2FDZUeYH4Q8ji15v36FKMp324o9bFo0qTQDFLR6gh9DmBA%2FdZkVylBbfosFCgvitcd11rY20qX%2B3iNmoGqRZZyQS6shiUO5YSVXZtM9EoDKsV7qjVtXEINukjjj"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7c59af6ef86823f9-LHR
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{
+  "title": "Test Post",
+  "body": "This is a test post",
+  "userId": 1,
+  "id": 101
+}
+
+12:19:50.262 [main]  INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) JSONPlaceholderProject/src/test/java/com/jsonplaceholdertest/app/POSTS/create_post.feature
