@@ -35,3 +35,8 @@ jobs:
           cd JSONPlaceholderProject
           mvn test -Dtest=AlbumsTestRunner
 
+    - name: Run /photos endpoint Test
+      run: |
+          cd JSONPlaceholderProject
+          mvn test -Dtest=PhotosTestRunner      
+

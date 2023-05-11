@@ -45,7 +45,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-05-11 04:11:31 pm</div>
+    <div>2023-05-11 04:14:57 pm</div>
   </div>        
 </div>
 
@@ -77,7 +77,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>640</span>
+              <span>ms:</span>&nbsp;<span>654</span>
             </div>
           </div>
           <div class="step-row">
@@ -100,7 +100,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -184,7 +184,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">636</div>
+    <div class="time-cell passed">646</div>
   </div>
 
    
@@ -193,7 +193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.9">16:11:30.835 request:
+  <div class="preformatted" data-parent="0.9">16:14:57.322 request:
 1 &gt; POST https://jsonplaceholder.typicode.com/albums
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 35
@@ -203,16 +203,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;userId&quot;:130,&quot;title&quot;:&quot;Test album&quot;}
 
-16:11:31.442 response time in milliseconds: 606
+16:14:57.962 response time in milliseconds: 639
 1 &lt; 201
-1 &lt; Date: Thu, 11 May 2023 14:11:31 GMT
+1 &lt; Date: Thu, 11 May 2023 14:14:57 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 57
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; X-Ratelimit-Limit: 1000
 1 &lt; X-Ratelimit-Remaining: 997
-1 &lt; X-Ratelimit-Reset: 1683814326
+1 &lt; X-Ratelimit-Reset: 1683814506
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Cache-Control: no-cache
@@ -224,10 +224,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Etag: W/&quot;39-nC6Ek5e8kMlvu2ezzXsD+M4jx7E&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=wPkcNoBE8QvVaAJ9f7DAAoppNwuqv1%2Fa%2Fw7fFXuQMn18JpyIlm3xUbe%2B91Bc3P5NCyPuPCrgt%2Fkb72au4gVP0OfIyf%2FUph8vADZYApp81%2FDQ1c3r0g2rzR44GOxxeST1VWKM6K3QOm4nlJWFZ1uY&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=hBN7gUbVNm00RPD%2BRvTUePI2dnhBT9QWmmQbFZbAlA5SRZw8zuhMNRwp6%2BDR5g7mObClouveO3cObz46Yjc%2B2rXa%2F4IGs0AZCSqc1DG2AWB%2FgZufm%2F01DzzPg952YjKTjZikO2%2B033DwXn5SoANI&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7c5b02f6383f06e3-CPT
+1 &lt; CF-RAY: 7c5b08011fa13eab-CPT
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {
   &quot;userId&quot;: 130,
@@ -282,7 +282,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response == { &quot;userId&quot;: 130, &quot;title&quot;: &quot;Test album&quot;, &quot;id&quot;: 101 }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
