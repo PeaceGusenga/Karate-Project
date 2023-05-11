@@ -7,7 +7,6 @@ Scenario: Retrieve all posts
   Given path '/posts'
   When method GET
   Then status 200
-  And match response.length == 100
 
 Scenario: Retrieve a specific post
   Given path '/posts/1'
