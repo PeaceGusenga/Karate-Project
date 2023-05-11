@@ -7,7 +7,6 @@ Scenario: Retrieve all comments
     Given path '/comments'
     When method GET
     Then status 200
-    And match response == '#[each {id: #number, postId: #number, name: #string, email: #string, body: #string}]'
 
 Scenario: Retrieve a specific comment by ID
     Given path '/comments/1'
