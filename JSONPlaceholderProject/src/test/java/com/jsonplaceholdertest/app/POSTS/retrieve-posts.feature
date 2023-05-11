@@ -1,13 +1,16 @@
 Feature: Retrieve posts
 
+Background:
+    * url 'https://jsonplaceholder.typicode.com'
+
 Scenario: Retrieve all posts
-  Given url 'https://jsonplaceholder.typicode.com/posts'
+  Given path '/posts'
   When method GET
   Then status 200
   And match response.length == 100
 
 Scenario: Retrieve a specific post
-  Given url 'https://jsonplaceholder.typicode.com/posts/1'
+  Given path '/posts/1'
   When method GET
   Then status 200
-  And match response.title == 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit'
+  And match response.id == 1

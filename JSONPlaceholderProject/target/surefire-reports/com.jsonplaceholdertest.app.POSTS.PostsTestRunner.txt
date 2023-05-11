@@ -1,19 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: com.jsonplaceholdertest.app.POSTS.PostsTestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 3.39 s <<< FAILURE! - in com.jsonplaceholdertest.app.POSTS.PostsTestRunner
-com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testPosts  Time elapsed: 3.262 s  <<< ERROR!
-java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/POSTS.feature
+Tests run: 6, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 36.225 s <<< FAILURE! - in com.jsonplaceholdertest.app.POSTS.PostsTestRunner
+com/jsonplaceholdertest/app/POSTS/update-posts.[1:3] Update a post  Time elapsed: 10.664 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+java.net.URISyntaxException: Illegal character in path at index 43: https://jsonplaceholder.typicode.com/posts/{postId}
+classpath:com/jsonplaceholdertest/app/POSTS/update-posts.feature:7
 
-com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testUpdatePost  Time elapsed: 3.294 s  <<< ERROR!
-java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/update-posts.feature
+com/jsonplaceholdertest/app/POSTS/update-posts.[2:11] Partially update a post  Time elapsed: 9.28 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+java.net.URISyntaxException: Illegal character in path at index 43: https://jsonplaceholder.typicode.com/posts/{postId}
+classpath:com/jsonplaceholdertest/app/POSTS/update-posts.feature:15
 
-com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testCreatePost  Time elapsed: 3.299 s  <<< ERROR!
-java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/create-post.feature
+com/jsonplaceholdertest/app/POSTS/delete-posts.[1:3] Delete a post  Time elapsed: 0.453 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+java.net.URISyntaxException: Illegal character in path at index 43: https://jsonplaceholder.typicode.com/posts/{postId}
+classpath:com/jsonplaceholdertest/app/POSTS/delete-posts.feature:6
 
-com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testDeletePost  Time elapsed: 3.303 s  <<< ERROR!
-java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/delete-posts.feature
+com/jsonplaceholdertest/app/POSTS/retrieve-posts.[1:3] Retrieve all posts  Time elapsed: 0.448 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | actual path does not exist (STRING:NUMBER)
+  '#notpresent'
+  100
 
-com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testRetrievePost  Time elapsed: 3.307 s  <<< ERROR!
-java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/retrieve-posts.feature
+classpath:com/jsonplaceholdertest/app/POSTS/retrieve-posts.feature:7
 

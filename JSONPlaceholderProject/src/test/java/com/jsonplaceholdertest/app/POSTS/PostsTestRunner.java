@@ -6,22 +6,22 @@ public class PostsTestRunner {
 
     @Karate.Test
     Karate testCreatePost() {
-        return Karate.run("src/test/java/com/jsonplaceholdertest/app/POSTS/create-post.feature").relativeTo(getClass());
+        return Karate.run("create-post.feature").relativeTo(getClass());
     }
     
     @Karate.Test
     Karate testRetrievePost() {
-        return Karate.run("src/test/java/com/jsonplaceholdertest/app/POSTS/retrieve-posts.feature").relativeTo(getClass());
+        return Karate.run("retrieve-posts.feature").relativeTo(getClass());
     }
 
     @Karate.Test
     Karate testUpdatePost() {
-        return Karate.run("src/test/java/com/jsonplaceholdertest/app/POSTS/update-posts.feature").relativeTo(getClass());
+        return Karate.run("update-posts.feature").relativeTo(getClass());
     }
 
     @Karate.Test
     Karate testDeletePost() {
-        return Karate.run("src/test/java/com/jsonplaceholdertest/app/POSTS/delete-posts.feature").relativeTo(getClass());
+        return Karate.run("delete-posts.feature").relativeTo(getClass());
     }
 
 }

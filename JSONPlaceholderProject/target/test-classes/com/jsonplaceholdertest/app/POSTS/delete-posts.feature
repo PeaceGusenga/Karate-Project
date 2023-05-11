@@ -1,7 +1,10 @@
 Feature: Delete a post
 
+Background:
+    * url 'https://jsonplaceholder.typicode.com'
+
 Scenario: Delete a post
-  Given path postId = 1
-  And url 'https://jsonplaceholder.typicode.com/posts/{postId}'
+  Given def postId = 1
+  And path '/posts/' + postId
   When method DELETE
   Then status 200
