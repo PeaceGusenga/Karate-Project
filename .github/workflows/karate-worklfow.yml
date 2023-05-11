@@ -20,7 +20,7 @@ jobs:
         distribution: adopt
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package --file JSONPlaceholderProject/pom.xml
 
     - name: Run /posts endpoint Test
       run: mvn test -Dtest=PostsTestRunner
