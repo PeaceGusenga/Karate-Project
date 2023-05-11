@@ -33,5 +33,5 @@ jobs:
     - name: Run /albums endpoint Test
       run: |
           cd JSONPlaceholderProject
-          mvn test -Dtest=AbumsTestRunner
+          mvn test -Dtest=AlbumsTestRunner
 
