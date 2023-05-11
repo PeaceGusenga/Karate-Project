@@ -30,3 +30,8 @@ jobs:
           cd JSONPlaceholderProject
           mvn test -Dtest=CommentsTestRunner
 
+    - name: Run /albums endpoint Test
+      run: |
+          cd JSONPlaceholderProject
+          mvn test -Dtest=AbumsTestRunner
+
