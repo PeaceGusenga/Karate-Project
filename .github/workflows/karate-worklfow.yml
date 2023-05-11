@@ -1,0 +1,28 @@
+name: Karate API Workflow
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Install JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+
+    - name: Install Karate
+      run: |
+        mkdir -p ~/.m2
+        echo "<settings><servers><server><id>github</id><username>\${{ github.actor }}</username><password>\${{ secrets.GITHUB_TOKEN }}</password></server></servers></settings>" > ~/.m2/settings.xml
+        mvn com.github.karsaig:karate-maven-plugin:1.1.0:install -DskipTests
+
+    - name: Run Karate tests
+      run: mvn test -Dtest=PostsTestRunner
