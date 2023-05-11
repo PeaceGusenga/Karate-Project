@@ -1,0 +1,6 @@
+#surefire_0
+#Thu May 11 19:35:50 SAST 2023
+basedir=/Users/user/Desktop/Projects/Karate Project/JSONPlaceholderProject
+test=PhotosTestRunner
+user.dir=/Users/user/Desktop/Projects/Karate Project/JSONPlaceholderProject
+localRepository=/Users/user/.m2/repository
