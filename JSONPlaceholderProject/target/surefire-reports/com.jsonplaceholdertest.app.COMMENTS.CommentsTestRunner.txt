@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jsonplaceholdertest.app.COMMENTS.CommentsTestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 57.058 s <<< FAILURE! - in com.jsonplaceholdertest.app.COMMENTS.CommentsTestRunner
-com/jsonplaceholdertest/app/COMMENTS/retrieve-comments.[1:6] Retrieve all comments  Time elapsed: 27.707 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: 
-SyntaxError: Unnamed:1:5 Expected ; but found {
-each {id: #number, postId: #number, name: #string, email: #string, body: #string} == _
-     ^
-Unnamed:1:82 Expected an operand but found ==
-each {id: #number, postId: #number, name: #string, email: #string, body: #string} == _
-                                                                                  ^
-
-classpath:com/jsonplaceholdertest/app/COMMENTS/retrieve-comments.feature:10
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 171.821 s - in com.jsonplaceholdertest.app.COMMENTS.CommentsTestRunner
