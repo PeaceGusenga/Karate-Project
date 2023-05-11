@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.jsonplaceholdertest.app.POSTS.PostsTestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 3.39 s <<< FAILURE! - in com.jsonplaceholdertest.app.POSTS.PostsTestRunner
+com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testPosts  Time elapsed: 3.262 s  <<< ERROR!
+java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/POSTS.feature
+
+com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testUpdatePost  Time elapsed: 3.294 s  <<< ERROR!
+java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/update-posts.feature
+
+com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testCreatePost  Time elapsed: 3.299 s  <<< ERROR!
+java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/create-post.feature
+
+com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testDeletePost  Time elapsed: 3.303 s  <<< ERROR!
+java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/delete-posts.feature
+
+com.jsonplaceholdertest.app.POSTS.PostsTestRunner.testRetrievePost  Time elapsed: 3.307 s  <<< ERROR!
+java.lang.RuntimeException: not found: com/jsonplaceholdertest/app/POSTS/com/jsonplaceholdertest/app/POSTS/retrieve-posts.feature
+
