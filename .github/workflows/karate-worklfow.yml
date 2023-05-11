@@ -23,7 +23,11 @@ jobs:
       run: |
         mkdir -p ~/.m2
         echo "<settings><servers><server><id>github</id><username>\${{ github.actor }}</username><password>\${{ secrets.GITHUB_TOKEN }}</password></server></servers></settings>" > ~/.m2/settings.xml
-        mvn com.github.karsaig:karate-maven-plugin:1.1.0:install -DskipTests
+        mvn org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:install -DskipTests
 
-    - name: Run Karate tests
+    - name: Run /posts endpoint Test
       run: mvn test -Dtest=PostsTestRunner
+
+    - name: Run /comments endpoint Test
+      run: mvn test -Dtest=CommentsTestRunner
+
