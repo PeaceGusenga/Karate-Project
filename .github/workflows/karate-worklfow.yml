@@ -19,24 +19,7 @@ jobs:
         java-version: '11'
         distribution: adopt
 
-    - name: Run /posts endpoint Test
+    - name: Run Complete JSONPlaceholder Endpoint TestSuite
       run: |
           cd JSONPlaceholderProject
-          mvn test -Dtest=PostsTestRunner
-
-
-    - name: Run /comments endpoint Test
-      run: |
-          cd JSONPlaceholderProject
-          mvn test -Dtest=CommentsTestRunner
-
-    - name: Run /albums endpoint Test
-      run: |
-          cd JSONPlaceholderProject
-          mvn test -Dtest=AlbumsTestRunner
-
-    - name: Run /photos endpoint Test
-      run: |
-          cd JSONPlaceholderProject
-          mvn test -Dtest=PhotosTestRunner      
-
+          mvn test 

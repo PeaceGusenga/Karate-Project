@@ -7,7 +7,7 @@ public class CommentsTestRunner {
     Karate testCreateComment() {
         return Karate.run("create-comments.feature").relativeTo(getClass());
     }
-
+    
     @Karate.Test
     Karate testRetrieveComment() {
         return Karate.run("retrieve-comments.feature").relativeTo(getClass());
