@@ -1,4 +1,7 @@
-Feature:
+Feature: Testing /photos endpoint on JSONPlaceholder site
+
+Background:
+  * url 'https://jsonplaceholder.typicode.com'
 
 Scenario: Verify the list of all photos
     Given path 'photos'
