@@ -37,20 +37,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-05-11 07:39:15 pm</div>
+    <div>2023-05-12 07:13:18 pm</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:6]"><span>[1:6]</span> <span>Verify that an existing photo can be deleted</span></a>
           </div>
         </div>
@@ -60,7 +60,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">com/jsonplaceholdertest/app/PHOTOS/delete-photos.feature</span><span class="feature-label">|</span>
+          <span class="feature-path">com/jsonplaceholdertest/app//PHOTOS/delete-photos.feature</span><span class="feature-label">|</span>
           <span class="feature-name">Testing /photos endpoint on JSONPlaceholder site</span>
           <span class="feature-description"></span>
         </div>
@@ -76,8 +76,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>45117</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>848</span>
             </div>
           </div>
           <div class="step-row">
@@ -100,7 +100,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;https://jsonplaceholder.typicode.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">6029</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -128,7 +128,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;photos/1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -150,13 +150,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.8">
-      <div class="step-ref failed">8</div>
+      <div class="step-ref passed">8</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell failed">39087</div>
+    <div class="time-cell passed">845</div>
   </div>
 
    
@@ -165,7 +165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">19:38:56.120 request:
+  <div class="preformatted" data-parent="0.8">19:13:18.124 request:
 1 &gt; DELETE https://jsonplaceholder.typicode.com/photos/1
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
@@ -173,11 +173,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:39:14.936 java.net.SocketException: Broken pipe, http call failed after 38829 milliseconds for url: https://jsonplaceholder.typicode.com/photos/1
-19:39:14.936 classpath:com/jsonplaceholdertest/app/PHOTOS/delete-photos.feature:8
-When method DELETE
-http call failed after 38829 milliseconds for url: https://jsonplaceholder.typicode.com/photos/1
-classpath:com/jsonplaceholdertest/app/PHOTOS/delete-photos.feature:8
+19:13:18.922 response time in milliseconds: 796
+1 &lt; 200
+1 &lt; Date: Fri, 12 May 2023 17:13:18 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 2
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1683911633
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Cache-Control: no-cache
+1 &lt; Pragma: no-cache
+1 &lt; Expires: -1
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=PQAjg2bkZoxR506J0O99uusD2kQgQl3v78JFaDwI%2Bpwl9uYl55ND%2Fk3CC3FnlzlnJEVrU5JvPq5lsULm5zAFfAMMNu34seoqJOrMWwbBKSexifRYNEorDUGTy00B%2BPEL45tOpseMh1FjrZguPBys&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 7c644aa39df73854-LHR
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{}
+
 </div>   
 
   
@@ -191,13 +212,13 @@ classpath:com/jsonplaceholdertest/app/PHOTOS/delete-photos.feature:8
 
   <div class="step-row">
     <div class="step-container" id="0.9">
-      <div class="step-ref skipped">9</div>
+      <div class="step-ref passed">9</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    

@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.jsonplaceholdertest.app.USERS.UsersTestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 88.748 s <<< FAILURE! - in com.jsonplaceholdertest.app.USERS.UsersTestRunner
+com/jsonplaceholdertest/app/USERS/retrieve-users.[2:11] Retrieve a specific user by ID  Time elapsed: 1.98 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+match failed: EQUALS
+  $ | not equal | actual has 4 more key(s) than expected - {"address":{"street":"Kulas Light","suite":"Apt. 556","city":"Gwenborough","zipcode":"92998-3874","geo":{"lat":"-37.3159","lng":"81.1496"}},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona","catchPhrase":"Multi-layered client-server neural-net","bs":"harness real-time e-markets"}} (MAP:MAP)
+  {"id":1,"name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz","address":{"street":"Kulas Light","suite":"Apt. 556","city":"Gwenborough","zipcode":"92998-3874","geo":{"lat":"-37.3159","lng":"81.1496"}},"phone":"1-770-736-8031 x56442","website":"hildegard.org","company":{"name":"Romaguera-Crona","catchPhrase":"Multi-layered client-server neural-net","bs":"harness real-time e-markets"}}
+  {"id":1,"name":"Leanne Graham","username":"Bret","email":"Sincere@april.biz"}
+
+
+classpath:com/jsonplaceholdertest/app/USERS/retrieve-users.feature:15
+

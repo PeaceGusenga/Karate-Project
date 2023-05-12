@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.jsonplaceholdertest.app.ALBUMS.AlbumsTestRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 78.214 s - in com.jsonplaceholdertest.app.ALBUMS.AlbumsTestRunner
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 24.138 s - in com.jsonplaceholdertest.app.ALBUMS.AlbumsTestRunner

@@ -25,7 +25,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
   
-    <title>com.jsonplaceholdertest.app.ALBUMS.create-albums</title>  
+    <title>com.jsonplaceholdertest.app.COMMENTS.update-comments</title>  
   </head>
   <body>   
     <div id="root-container">
@@ -45,13 +45,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-05-12 07:25:25 pm</div>
+    <div>2023-05-12 07:24:04 pm</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:6]"><span>[1:6]</span> <span>Create a new album</span></a>
+            <a href="#[1:6]"><span>[1:6]</span> <span>Update a specific comment by ID</span></a>
           </div>
         </div>
       </div>
@@ -60,8 +60,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">com/jsonplaceholdertest/app/ALBUMS/create-albums.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Test /albums endpoint</span>
+          <span class="feature-path">com/jsonplaceholdertest/app/COMMENTS/update-comments.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Testing /comments endpoint</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
@@ -72,12 +72,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:6]</span>
-                <span class="scenario-name">Create a new album</span>
+                <span class="scenario-name">Update a specific comment by ID</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>692</span>
+              <span>ms:</span>&nbsp;<span>666</span>
             </div>
           </div>
           <div class="step-row">
@@ -125,10 +125,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">7</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/albums&#39;</span>
+        <span>Given</span>&nbsp;<span>path &#39;/comments/1&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -153,10 +153,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { &quot;userId&quot;: 130, &quot;title&quot;: &quot;Test album&quot; }</span>
+        <span>And</span>&nbsp;<span>request {postId: 1, name: &#39;Jane Doe&#39;, email: &#39;janedoe@example.com&#39;, body: &#39;This is an updated test comment&#39;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -181,10 +181,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
+        <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">689</div>
+    <div class="time-cell passed">664</div>
   </div>
 
    
@@ -193,46 +193,46 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.9">19:25:24.960 request:
-1 &gt; POST https://jsonplaceholder.typicode.com/albums
+  <div class="preformatted" data-parent="0.9">19:24:04.169 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/comments/1
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 35
+1 &gt; Content-Length: 101
 1 &gt; Host: jsonplaceholder.typicode.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14.0.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;userId&quot;:130,&quot;title&quot;:&quot;Test album&quot;}
+{&quot;postId&quot;:1,&quot;name&quot;:&quot;Jane Doe&quot;,&quot;email&quot;:&quot;janedoe@example.com&quot;,&quot;body&quot;:&quot;This is an updated test comment&quot;}
 
-19:25:25.645 response time in milliseconds: 684
-1 &lt; 201
-1 &lt; Date: Fri, 12 May 2023 17:25:25 GMT
+19:24:04.829 response time in milliseconds: 660
+1 &lt; 200
+1 &lt; Date: Fri, 12 May 2023 17:24:04 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 57
+1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; X-Powered-By: Express
 1 &lt; X-Ratelimit-Limit: 1000
-1 &lt; X-Ratelimit-Remaining: 997
-1 &lt; X-Ratelimit-Reset: 1683912353
-1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; X-Ratelimit-Remaining: 996
+1 &lt; X-Ratelimit-Reset: 1683912293
+1 &lt; Vary: Origin, Accept-Encoding
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Cache-Control: no-cache
 1 &lt; Pragma: no-cache
 1 &lt; Expires: -1
-1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; Location: http://jsonplaceholder.typicode.com/albums/101
 1 &lt; X-Content-Type-Options: nosniff
-1 &lt; Etag: W/&quot;39-nC6Ek5e8kMlvu2ezzXsD+M4jx7E&quot;
+1 &lt; Etag: W/&quot;81-LWf/RE/hW/2Qh4zUSxGfQ2o4rMk&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=X7GIGJZGg4v6T%2FfIVvlfPFn9Y5DeH48skKy7olTRm2X13uPQWoL9SymSskN0mougeufmuLdChkGH1Vz%2B1aYqeWOEiEMlrPuZ6MFYBmsm6OajKBUwnbPsfWMB3RRyNvoxk1CCKYvXEvjRA%2BTD%2BRWR&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=Gmw1QBe%2FncLK2Nl5MmoCCbUlV12p6YP5Tvb3sV1YISeHXWTFe4r4KB%2B2eYZG2WSkn1HFhi62DO%2FEWqeQf4J81vnL9%2FtK5UcchuOMTMSD3qQ%2Fgc%2Bexk9kdOY6MoRJwiS0R4t%2BXR3UdJMizgLar6WJ&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7c645c6198237797-LHR
+1 &lt; CF-RAY: 7c645a68a93175a9-LHR
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {
-  &quot;userId&quot;: 130,
-  &quot;title&quot;: &quot;Test album&quot;,
-  &quot;id&quot;: 101
+  &quot;postId&quot;: 1,
+  &quot;name&quot;: &quot;Jane Doe&quot;,
+  &quot;email&quot;: &quot;janedoe@example.com&quot;,
+  &quot;body&quot;: &quot;This is an updated test comment&quot;,
+  &quot;id&quot;: 1
 }
 
 </div>   
@@ -251,7 +251,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
+        <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -279,7 +279,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response == { &quot;userId&quot;: 130, &quot;title&quot;: &quot;Test album&quot;, &quot;id&quot;: 101 }</span>
+        <span>And</span>&nbsp;<span>match response == {postId: 1, name: &#39;Jane Doe&#39;, email: &#39;janedoe@example.com&#39;, body: &#39;This is an updated test comment&#39;, id: 1}</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
